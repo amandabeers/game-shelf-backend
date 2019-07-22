@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class GamesController < ApplicationController
+class GamesController < ProtectedController
   before_action :set_game, only: %i[show update destroy]
 
   # GET /games
