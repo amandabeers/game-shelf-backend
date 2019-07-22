@@ -1,5 +1,12 @@
 ## Amanda's Game Shelf
 
+
+https://game-shelf-api.herokuapp.com/
+https://git.heroku.com/game-shelf-api.git
+
+https://polar-eyrie-78267.herokuapp.com/
+https://git.heroku.com/polar-eyrie-78267.git
+
 ## Technologies
 
 - Ruby on Rails
