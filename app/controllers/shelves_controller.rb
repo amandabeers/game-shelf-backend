@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class ShelvesController < ApplicationController
+class ShelvesController < ProtectedController
   before_action :set_shelf, only: %i[show update destroy]
 
   # GET /shelves
