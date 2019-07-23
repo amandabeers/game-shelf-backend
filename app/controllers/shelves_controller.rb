@@ -5,7 +5,7 @@ class ShelvesController < ProtectedController
 
   # GET /shelves
   def index
-    @shelves = Shelf.all
+    @shelves = current_user.shelves
 
     render json: @shelves
   end
@@ -17,7 +17,7 @@ class ShelvesController < ProtectedController
 
   # POST /shelves
   def create
-    @shelf = Shelf.new(shelf_params)
+    @shelf = current_user.shelves.build(shelf_params)
 
     if @shelf.save
       render json: @shelf, status: :created, location: @shelf
@@ -44,7 +44,7 @@ class ShelvesController < ProtectedController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_shelf
-    @shelf = Shelf.find(params[:id])
+    @shelf = current_user.shelves.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
