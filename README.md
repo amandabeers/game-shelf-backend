@@ -7,7 +7,9 @@ Game Shelf is an app that lets you add board games to your shelf from a database
 ### Links
 
 https://github.com/amandabeers/game-shelf-client
+
 https://game-shelf-api.herokuapp.com/
+
 https://amandabeers.github.io/game-shelf-client/
 
 ### Technologies
